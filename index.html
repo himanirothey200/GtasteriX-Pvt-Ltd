@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>GTAsteriX Pvt Ltd</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon-32x32.png" rel="icon">
+  <link href="assets/img/favicon-32x32.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.scss" rel="stylesheet">
+
+ 
+  <style>
+
+
+  /* Styles for the icons container */
+.icons-container {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 20px;
+    transform: translateY(-50%); /* Adjust vertical position */
+    z-index: 100;
+    display: flex ;
+    flex-direction: column;
+    
+}
+
+/* Styles for the individual buttons */
+.call-button,
+.whatsapp-button {
+    border-radius: 50%; 
+    margin: 5px; 
+    
+    width:60px;
+    height:60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* Add these styles to your existing CSS or create a new CSS file */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Optional styles for navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="icons-container" >
+    <!-- Call Button -->
+    <a href="tel:+919209257944" class="call-button btn btn-primary"><i class="fas fa-phone"></i></a>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://api.whatsapp.com/send?phone=9209257944" class="whatsapp-button btn btn-success"><i class="fab fa-whatsapp"></i></a>
+</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <div class="logo" style="font-family: bootstrap-icons;font-size: 43px;"><h1 style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GTAsteriX</h1></div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo  me-lg-0"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+         
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#" class="get-started-btn scrollto" data-bs-toggle="modal" data-bs-target="#quoteModal">Get a Quote</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  
+  
+<!-- Modal -->
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header text-center" style="align-self: center; color: greenyellow;">
+        <h3 class="modal-title " id="quoteModalLabel" >Get a Quote</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="https://formsubmit.co/gtasterix@gmail.com" method="POST" method="post" role="form" class="php-email-form">
+          <!-- Your form fields go here, as described in your original code -->
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="Mobile Numbe" id="Mobile Numbe" placeholder="Mobile Number" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3" style="display: none;">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Thank You for Contacting us
+              Our Executive will revert you shortly. </div>
+          </div>
+          <div class="text-center" style="margin-top: 5px;"><button class="btn btn-success" type="submit" value="send">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1 >Welcome to GTAsteriX,<span></span></h1>
+          <h3 style="color: orange;">A premier software development company</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- End Hero -->
+   <main id="main">
+    <!-- ======= About Section ======= -->
+   <!-- ======= About Section ======= -->
+   <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="assets/img/pexels-mikhail-nilov-7989234.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+          <h3>About Us</h3>
+          <p class="fst-italic">
+            We are dedicated to streamlining and improving the industry here at GTAsteriX
+          </p>
+          <ul>
+            <li><i class="ri-checkbox-fill"></i>Emphasizing innovation to provide optimum solutions for your clients and give them a competitive edge in the market is a commendable approach</li>
+            <li><i class="ri-checkbox-fill"></i> Striving to bring future technology excellence for your customers, colleagues, and shareholders is a visionary goal that can lead to long-term success and growth.</li>
+            <li><i class="ri-checkbox-fill"></i> Building quality solutions, boosting productivity, and significantly reducing time to market while keeping costs minimal is a challenging but achievable goal.</li>
+          </ul>
+          <p> 
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+   
+
+     <!-- ======= Features Section ======= -->
+     <section id="features" class="features section-bg">       
+      <div class="container">
+
+        <div class="section-title">
+          <div class="section-title">
+            <h2>Services</h2>
+          <p>Features</p>
+          </div>
+
+        <div class="row content">
+          <div class="col-md-5" data-aos="fade-right" style="font-size: smaller ;  ">
+         
+          </div>
+      
+          </div>
+        </div>
+
+        <div class="row content" style="margin: 44px; font-family: 'Times New Roman', Times, serif margin-top: -8%;">
+          <div class="col-md-3 order-1 order-md-2" data-aos="fade-left" style="font-size: small; margin-top: 13%" >
+           <img src="assets/img/features-2.svg" class="img-fluid" alt=""><h3 style="margin-top: -93%;">Experience</h3>
+            <p style="text-align: justify; margin-right: -233px; font-size: medium;">One aspect that must be evaluated is the experience of the software development company. Who have been their clients in the past, what projects have they created and what kind of industries do they have experience with.</p>
+            <h3 style="font-family: 'bootstrap-icons';">They work in the cloud</h3>
+            <p></p>
+            <p class="fst-italic">
+             
+            </p>
+            <p style="text-align: justify; margin-right: -233px; font-size: medium;">
+              Try to ensure that the software development company that you are going to hire has experience or certified developers in cloud solutions, so that you can take advantage of this in favor of your project.
+            </p>
+            <h3 style="font-family: 'bootstrap-icons';">Fast Design Iterations</h3>      
+            <p style="text-align: justify; margin-right: -233px; font-size: medium;">
+              One of the defining characteristics of a good software development company is that they first focus on creating and releasing the minimum viable product (MVP), with rapid iterations to develop the product.</p>
+             </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right" style="font-size: small; margin-top: -12%" >
+            
+            <p class="fst-italic">
+            
+              <h3 style="font-family: 'bootstrap-icons';">Always have well-defined project objectives</h3>
+            </p>
+            <p style="text-align: justify; font-size: medium; margin-top: 0%;">
+             
+            It is very important that the technological ally that you are going to have carry out 
+              a strategic planning of the project since this guarantees the success of the project and 
+              the satisfactory execution of each of the stages.
+            </p>
+            <h3 style="font-family: 'bootstrap-icons';">Leadership
+              
+               </h3>
+               <p style="text-align: justify; font-size: medium;">  When evaluating a software development company, you should not only settle for knowing</br> 
+                what technologies it handles or how many years of experience it has. It is important that this provider's team have leadership focused on having the best results.</p>
+               <h3 style="font-family: 'bootstrap-icons';"> Management</h3>
+               <p style="text-align: justify; font-size: medium;">
+                 Talk to the software development company about how they manage their projects. For  example, what project management platform do they use, how do they manage the tasks and activities of the development team, what kind of development methodology do they use. This will allow you to see how organized the technology provider's team is.</p></div>
+        </div>
+          </div>
+          <div class="col-md-7 pt-5" data-aos="fade-left">
+            
+         
+            
+          </div> -->
+        </div>
+
+        <div class="row content">
+         
+          <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+            
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services" style="margin-top: -17%;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Solutions</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Web Development</a></h4>
+              <p>Web development is the process of creating websites or web applications for the internet or an intranet. It involves a web design, web content development, client-side and server-side scripting, web server configuration, and network security.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">DBMS</a></h4>
+              <p>A Database Management System (DBMS) is software that facilitates the creation, maintenance, and use of databases.DBMS software provides an interface for users and applications to interact with the database.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Testing & QA</a></h4>
+              <p>Software testing is a critical phase in the software development process that involves evaluating a software application to identify and resolve defects or issues before it is released to users.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Full Stack Software Development</a></h4>
+              <p>Our industry-grade full-stack developers help you design and develop solutions using major technologies, databases, and languages, including JavaScript, Java, Angular, MySQL, and more.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">React JS</a></h4>
+              <p>ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Call To Enquiry</h3>
+          <p> Request a demo or get in touch with
+            our team to learn how we can make a competitive advantage for your
+            organization.</p>
+          <a class="cta-btn" href="tel:+917218024999">Get Demo</a>
+        </div>
+
+      </div>
+    </section>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="4" class="purecounter"></span>
+                    <p><strong>Revenue Impact</strong> Generates about 20% more revenue by reducing the wastage.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-bell-fill"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2" class="purecounter"></span>
+                    <p><strong>Procure+</strong>is already used by 15+ industries Successfully. </p>
+                  </div>
+                </div>
+              </div>
+            </div>End .content -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg" style="margin-top: -26px;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>ReachOut Us</p>
+          To collaborate with us, please reach out through the provided contact details. If you have a project in mind, let's discuss it. Feel free to contact us.
+            Our dedicated team is just a message away, ready to provide the support you need.
+              Your feedback and queries are important to us, and we look forward to being in touch.
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p style="font-size: large;">World Trade Center 8th Floor Kharadi</br>
+                  Pune, Maharashtra 411014</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p style="font-size: large;">info@gtasetrix.com</p></br>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p style="font-size: large;">+91-9209257944<br>+91-9022654889</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+           <div class="col-lg-6 mt-4 mt-lg-0">
+        <div id="contactForm">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+                <div id="loading" class="loading" style="display: none;">Loading</div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+                <div id="sent-message" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center">
+                <button onclick="sendEmail()" id="submit-button">Send Message</button>
+            </div>
+          </div>
+        
+    </div>
+
+    <script>
+      function sendEmail(){
+        const data = {
+                name: "harp",
+                email: "hsingh.161297@gmail.com"
+            };
+
+            fetch("https://formsubmit.co/gtasterix%40gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Handle the response data as needed
+            })
+            .catch(error => {
+                console.error("An error occurred:", error);
+            });
+      }
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            // Display loading message
+            document.getElementById("loading").style.display = "block";
+            
+            // Simulate a form submission (you should replace this with your own AJAX request)
+            setTimeout(function () {
+                // Simulate a successful response
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("sent-message").style.display = "block";
+                // Clear the form
+                document.getElementById("contactForm").reset();
+            }, 2000); // Simulating a 2-second delay
+        });
+    </script>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <img src="./assets/img/Selected photo.png" style="width: 150px;" >
+              <br>
+              <br>
+              <p>
+                
+                   World Trade Center Kharadi, Pune, Maharashtra 411014.<br>
+                <strong>Phone:</strong> +919209257944 <br>
+                <strong>Email:</strong> gtasterix@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#service">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+         
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>GTAsteriX</span></strong>. All Rights Reserved
+      </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const form = document.getElementById("contact");
+    const loadingMessage = document.querySelector(".loading");
+    const errorMessage = document.querySelector(".error-message");
+    const successMessage = document.querySelector(".sent-message");
+  
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+  
+      // Hide all messages initially
+      loadingMessage.style.display = "block";
+      errorMessage.style.display = "none";
+      successMessage.style.display = "none";
+  
+      // Send the form data to the server using AJAX or fetch
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+        });
+  
+        if (response.ok) {
+          // If the server responds with a success status (e.g., 200 OK),
+          // display the success message and reset the form
+          successMessage.style.display = "block";
+          form.reset();
+        } else {
+          // If there's an error (e.g., validation error or server error),
+          // display the error message returned by the server
+          const errorMessageText = await response.text();
+          errorMessage.innerHTML = errorMessageText;
+          errorMessage.style.display = "block";
+        }
+      } catch (error) {
+        // Handle network errors or other exceptions
+        console.error(error);
+        errorMessage.innerHTML = "An error occurred. Please try again later.";
+        errorMessage.style.display = "block";
+      } finally {
+        loadingMessage.style.display = "none";
+      }
+    });
+  </script>
+  
+</body>
+
+</html>
